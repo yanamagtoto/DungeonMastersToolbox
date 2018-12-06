@@ -7,7 +7,7 @@
         <item
             android:id="@+id/npc_generator"
             android:icon="@drawable/ic_menu_camera"
-            android:title="NPC Generator"/>
+            android:title="NPC Generator" />
         <item
             android:id="@+id/venue_generator"
             android:icon="@drawable/ic_menu_gallery"

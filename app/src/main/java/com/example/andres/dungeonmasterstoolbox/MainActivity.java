@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -72,18 +71,23 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.npc_generator) {
+            setContentView(R.layout.activity_npc_generator);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.venue_generator) {
+            setContentView(R.layout.activity_venue_generator);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.loot_generator) {
+            setContentView(R.layout.activity_loot_generator);
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.faction_generator) {
+            setContentView(R.layout.activity_faction_generator);
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.enemy_generator) {
+            setContentView(R.layout.activity_enemy_generator);
 
+        } else if (id == R.id.wiki_spells_weapons) {
+            setContentView(R.layout.activity_wiki_home);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
